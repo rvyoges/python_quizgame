@@ -1,0 +1,50 @@
+correct = 0
+total_questions = 4
+name=input("What is your name\n")
+print("Hi,"+name+".Lets start our quiz game...")
+
+print("1) How many planets does solar system have?")
+print(" a. 12 \n b. 9 \n c. 8 \n d. 10")
+answer = input("Your response:")
+if answer == "c":
+  correct += 1
+  print("correct!")
+else:
+  print("incorrect.")
+
+print("2) What is the capital of Russia?")
+print(" a. Ottawa \n b. Moscow \n c. Montreal \n d. Quebec")
+answer = input("Your response:")
+if answer == "b":
+  correct += 1
+  print("correct!")
+else:
+  print("incorrect.")
+  
+print("3)Which is not a neighbouring country of India?")
+print("""a. Myanmar
+b. Bangladesh
+c. Afganistan
+d. Thailand""")
+answer = input("Your response:")
+if answer == "d":
+  correct += 1
+  print("correct")
+else:
+  print("incorrect")
+
+print("4) Who was popularly named as Iron man of India?")
+print("""a. Pandit Jawaharlal Nehru.
+b. Mahatma Gandhi
+c. Sardar vallabhai patel
+d. B.R.Ambedkar""")
+answer = input("Your response:")
+if answer == "c":
+  correct += 1
+  print("correct")
+else:
+  print("incorrect")
+
+score = correct/total_questions*100
+print("Quiz complete")
+print("You scored a {}%".format(score))
